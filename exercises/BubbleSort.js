@@ -13,29 +13,5 @@ function bubbleSort(array) {
 
     // Make sure to keep track of whether a swap happened!
     // After both loops have exited, remember to return the array
-    
-    let swapHappened = true;
-
-    while (swapHappened){
-
-        swapHappened = false;
-
-        for (let i = 0; i <= array.length; i++){
-
-            if (array[i] > array[i+1]){
-
-                const bigger = array[i];
-                array[i] = array[i+1];
-                array[i+1] = bigger;
-
-                swapHappened = true;
-            }
-        }
-        
-    }
-
-    return array;
 }
-console.log(bubbleSort([3,1,6,7,3,8,9,4]))
-
 module.exports = bubbleSort;
